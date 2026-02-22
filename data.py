@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+
 
 def initialization():
     decay_data = {
@@ -29,8 +29,5 @@ def initialization():
 
     high_pass_df = pd.DataFrame(high_pass_data)
 
-    print(decay_df)
-    print(low_pass_df)
-    print(high_pass_df)
+    return decay_df, low_pass_df, high_pass_df
 
-initialization()
